@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState()
+  const [count, setCount] = useState(1)
 
   useEffect (() => {
-    fetch('https://rickandmortyapi.com/api/character/'+count)
-    .then(res => console.log(res))
-    .catch(error => console.log('error'))
+    fetch('https://rickandmortyapi.com/api/character/'+count,)
+    .then(res => res.json()) 
+    .then(data => console.log(data)) 
+    .catch(error => console.log('error', error));
   }, [count]);
 
   
@@ -27,7 +28,12 @@ function App() {
         <h4 className='h4'>Último ep visto: "Gotron Jerrysis Rickvangelion"</h4>
       </div>
     </div>
-      </nav>
+
+    {/* BOTÃO */}
+    <div className="button-get">
+        <button className='button' onClick={() => setCount(count + 1)}>gerar um novo personagem</button>
+      </div>
+  </nav>
     </>
   )
 }

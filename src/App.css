@@ -4,6 +4,7 @@
   padding: 2rem;
   text-align: center;
 }
+/* NAV */
 .body{
   background-color: rgb(88, 46, 5);
 }
@@ -16,6 +17,9 @@
   display: flex;
   border-radius: 15px;
   background-color: rgb(255, 223, 180);
+  box-shadow: 10px 13px 20px -8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 13px 20px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 13px 20px -8px rgba(0,0,0,0.75);  
 }
 
 .imagem {
@@ -49,4 +53,20 @@
   flex-direction: column;
   margin-left: 10px;
   max-width: 50%;
+}
+
+/* BOTÃO */
+
+.button-get {
+  margin-top: 30px;
+}
+
+.button {
+  color: rgb(70, 16, 0);
+  background-color: rgb(255, 223, 180);
+  border: solid 6px rgb(57, 33, 15);
+  transition: transform 0.2s ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
 }
