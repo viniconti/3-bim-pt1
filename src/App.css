@@ -5,6 +5,9 @@
   text-align: center;
 }
 /* NAV */
+
+/* BOTÃO */
+
 .body{
   background-color: rgb(88, 46, 5);
 }
@@ -53,20 +56,4 @@
   flex-direction: column;
   margin-left: 10px;
   max-width: 50%;
-}
-
-/* BOTÃO */
-
-.button-get {
-  margin-top: 30px;
-}
-
-.button {
-  color: rgb(70, 16, 0);
-  background-color: rgb(255, 223, 180);
-  border: solid 6px rgb(57, 33, 15);
-  transition: transform 0.2s ease-in-out;
-}
-button:hover {
-  transform: scale(1.05);
 }
