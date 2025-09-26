@@ -29,13 +29,16 @@ function App() {
           </div>
 
           <div className="nome">
-            <h3 className='h3'>Nome: {character.name}</h3>
+            <h3 className='h3'>Nome: {character.name?character.name:''}</h3>
             <h4 className='h4'>
-              Status: {character.status} - Espécie: {character.species}
+              Status: {character.status?character.status[0]:''} - Espécie: {character.species?character.species[0]:''}
             </h4>
-            <h4 className='h4'>Gênero: {character.gender}</h4>
+            <h4 className='h4'>Gênero: {character.gender?character.gender[0]:''}</h4>
             <h4 className='h4'>
               Última localização: {character.location?.name}
+            </h4>
+            <h4 className='h4'>
+              Último ep visto: {character.episode?character.episode[0]:''}
             </h4>
           </div>
         </div>
