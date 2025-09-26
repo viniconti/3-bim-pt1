@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 function App() {
 
 
-  const [count, setCount] = useState(1)
+  const [count, setCount] = useState(434)
   const [character, setCharacter] = useState({})
 
   useEffect(() => {
@@ -31,9 +31,9 @@ function App() {
           <div className="nome">
             <h3 className='h3'>Nome: {character.name?character.name:''}</h3>
             <h4 className='h4'>
-              Status: {character.status?character.status[0]:''} - Espécie: {character.species?character.species[0]:''}
+              Status: {character.status?character.status[0]:''} - Espécie: {character.species}
             </h4>
-            <h4 className='h4'>Gênero: {character.gender?character.gender[0]:''}</h4>
+            <h4 className='h4'>Gênero: {character.gender}</h4>
             <h4 className='h4'>
               Última localização: {character.location?.name}
             </h4>
